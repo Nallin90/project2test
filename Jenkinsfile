@@ -2,7 +2,7 @@ node {
     def mvnHome = tool 'MyMaven'
     def dockerImageTag = "baronea90/dockerhub{env.BUILD_NUMBER}"
     stage('clone repo'){
-        git 'https://github.com/Nallin90/Project-2.git'
+        git 'https://github.com/Nallin90/project2test.git'
         mvnHome = tool 'MyMaven'
     }
     stage('Build Project 2'){
