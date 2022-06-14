@@ -2,7 +2,7 @@ node {
     def mvnHome = tool 'MyMaven'
     def dockerImageTag = "baronea90/dockerhub{env.BUILD_NUMBER}"
     stage('clone repo'){
-        git 'https://github.com/Nallin90/project2test.git'
+        git 'https://github.com/Nallin90/Project-2.git'
         mvnHome = tool 'MyMaven'
     }
     stage('Build Project 2'){
@@ -17,8 +17,8 @@ node {
         echo "Docker Image Tag name : ${dockerImageTag}"
         //docker-hub-credentials - we have to create in jenkins credentials
         docker.withRegistry('https://registry.hub.docker.com','docker-hub-credentials') {
-            dockerImage.push("project2-${env.BUILD_NUMBER}")
-            dockerImage.push("project2-latest")
+            dockerImage.push("${env.BUILD_NUMBER}")
+            dockerImage.push("latest")
         }
     }
 }
