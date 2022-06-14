@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sources>
+	<data-source id="postgres-jdbc-180f73b9bbf-46449fdf7d29f913" provider="postgresql" driver="postgres-jdbc" name="project1" save-password="true" read-only="false">
+		<connection host="localhost" port="5432" server="" database="project1" url="jdbc:postgresql://localhost:5432/project1" user="postgres" password="AQsJNCGi" home="postgresql-x64-13" type="dev">
+			<property name="connectTimeout" value="20"/>
+			<property name="loginTimeout" value="20"/>
+			<provider-property name="@dbeaver-chosen-role@" value=""/>
+			<provider-property name="@dbeaver-show-non-default-db@" value="false"/>
+			<provider-property name="@dbeaver-show-template-db@" value="false"/>
+			<provider-property name="@dbeaver-show-unavailable-db@" value="false"/>
+			<provider-property name="show-database-statistics" value="false"/>
+			<provider-property name="@dbeaver-read-all-data-types-db@" value="false"/>
+			<provider-property name="@dbeaver-use-prepared-statements-db@" value="false"/>
+			<provider-property name="postgresql.dd.plain.string" value="false"/>
+			<provider-property name="postgresql.dd.tag.string" value="false"/>
+			<network-handler type="TUNNEL" id="ssh_tunnel" enabled="false" save-password="true">
+				<property name="jumpServer0.authType" value="PASSWORD"/>
+				<property name="remoteHost" value=""/>
+				<property name="keyPath" value=""/>
+				<property name="implementation" value="jsch"/>
+				<property name="bypassHostVerification" value="false"/>
+				<property name="jumpServer0.keyPath" value=""/>
+				<property name="jumpServer0.port" value="22"/>
+				<property name="port" value="22"/>
+				<property name="jumpServer0.host" value=""/>
+				<property name="jumpServer0.enabled" value="false"/>
+				<property name="localHost" value=""/>
+				<property name="host" value=""/>
+				<property name="jumpServer0.name" value=""/>
+				<property name="authType" value="PASSWORD"/>
+			</network-handler>
+			<network-handler type="PROXY" id="socks_proxy" enabled="false" save-password="true">
+				<property name="socks-host" value=""/>
+				<property name="socks-port" value="1080"/>
+			</network-handler>
+			<network-handler type="CONFIG" id="postgre_ssl" enabled="false" save-password="true">
+				<property name="sslFactory" value=""/>
+				<property name="ssl.client.cert" value=""/>
+				<property name="ssl.client.key" value=""/>
+				<property name="ssl.ca.cert" value=""/>
+				<property name="ssl.method" value="CERTIFICATES"/>
+				<property name="sslMode" value=""/>
+			</network-handler>
+		</connection>
+	</data-source>
+	<filters/>
+</data-sources>
