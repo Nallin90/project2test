@@ -17,8 +17,8 @@ node {
         echo "Docker Image Tag name : ${dockerImageTag}"
         //docker-hub-credentials - we have to create in jenkins credentials
         docker.withRegistry('https://registry.hub.docker.com','docker-hub-credentials') {
-            dockerImage.push("${env.BUILD_NUMBER}")
-            dockerImage.push("latest")
+            dockerImage.push("project2-${env.BUILD_NUMBER}")
+            dockerImage.push("project2-latest")
         }
     }
 }
