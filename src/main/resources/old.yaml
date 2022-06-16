@@ -4,7 +4,8 @@ management:
   endpoints:
     web:
       exposure:
-        include: '*'
+        include: "prometheus"
+
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver

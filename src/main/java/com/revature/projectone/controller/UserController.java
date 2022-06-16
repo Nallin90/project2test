@@ -64,6 +64,7 @@ public class UserController {
             return responseEntity = new ResponseEntity<String>(item.getItemId() + " successfully added to cart", HttpStatus.ACCEPTED);
 
         }else{
+            LOGGER.warn("Item: "+ item.getItemId() + " not found, please add an existing item.");
             return responseEntity = new ResponseEntity<String>(item.getItemId() + " not found, please add an existing item", HttpStatus.NOT_FOUND);
         }
 
