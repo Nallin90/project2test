@@ -1,10 +1,13 @@
 server:
   port: 8085
 management:
+  endpoint:
+    health:
+      show-details: "always"
   endpoints:
     web:
       exposure:
-        include: "prometheus"
+        include: "prometheus, health, info"
 
 spring:
   datasource:

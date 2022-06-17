@@ -95,6 +95,7 @@
 					</excludes>
 				</configuration>
 			</plugin>
+
 		</plugins>
 		<finalName>project2</finalName>
 	</build>
