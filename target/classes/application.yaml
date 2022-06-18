@@ -1,0 +1,28 @@
+server:
+  port: 8085
+management:
+  endpoint:
+    health:
+      show-details: "always"
+  endpoints:
+    web:
+      exposure:
+        include: "prometheus, health, info"
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://postgres.cvd54vnvebet.us-west-1.rds.amazonaws.com:5432/postgres
+    username: postgres
+    password: rootroot
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    generate-ddl: true
+  show-sql: true
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
