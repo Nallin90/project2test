@@ -25,6 +25,6 @@ public class User {
 
 @OneToOne(cascade = CascadeType.ALL)
 @JoinColumn(name = "cartId", referencedColumnName = "cartId")
-    private Cart cart;
+    private Cart cart = new Cart();
 
 }
