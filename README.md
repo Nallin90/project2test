@@ -68,13 +68,17 @@ ____
 ---
 >## Documentation:
 >- Starting project 2 via kubernetes
->  - ![img_5.png](img_5.png)
+>  - ![img_6.png](img_6.png)
 >- Checking to see which alerts are firing via prometheus UI
->  - ![img_4.png](img_4.png)
+>  - ![img_7.png](img_7.png)
 >- Ensuring the appropriate jobs are up and running via prometheus UI
->  - ![img_3.png](img_3.png)
+>  - ![img_8.png](img_8.png)
 >- Validating that prometheus and alert manager are properly configured and communicating with one another
->  - ![img_2.png](img_2.png)
+>  - ![img_9.png](img_9.png)
 >- Analyzing statistical data of project 2 application via Grafana
 >  - ![img.png](img.png)
 >  - ![img_1.png](img_1.png)
+
+>## How To:
+> MAKE SURE TO INCLUDE CHANGING URL IN VSCODE FOR ALERTMANAGER UI FOR PROJECT2_METRICS
+> START ALERTMANAGER/RESTART PROMETHEUS AFTER CHANGING IP IN VSCODE
