@@ -15,7 +15,7 @@ ____
 >### Deadline
 >June 20th, 2022
 ---
->### Requirements
+>## Requirements
 >
 >- Each team must configure Prometheus to retrieve metrics from the deployed application
 >
@@ -113,8 +113,13 @@ ____
 >- Open command prompt as an administrator
 >- Start minikube
 >- In command prompt navigate to 'Kubernetes' folder of project 2
->- Once inside the Kubernetes folder run the command 'minikube kubectl apply -f ./'
->- Run command 'minikube ip' and take note of the IP address it returns
->- 
-> MAKE SURE TO INCLUDE CHANGING URL IN VSCODE FOR ALERTMANAGER UI FOR PROJECT2_METRICS
-> START ALERTMANAGER/RESTART PROMETHEUS AFTER CHANGING IP IN VSCODE
+>- Once inside the Kubernetes folder run the command 'kubectl apply -f ./'
+>- Run command 'minikube ip' and copy the IP address it returns
+>- Go to your local prometheus.yml/yaml file, create a job, and paste the IP address in targets
+>- Open a new command prompt as an administrator and start up prometheus and alert manager via nssm
+>- Open Postman and start executing commands(see below for a list of Postman commands)
+>- Open a web browser and type localhost:3000 to navigate to Grafana homepage
+>- Navigate to the dashboard to view the application metrics
+---
+>## Postman commands:
+>- NOTE: When sending the requests via postman
