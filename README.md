@@ -12,22 +12,6 @@ If done, the selected project must be deployed in the new namespace.
 Each team will follow an Agile approach, and track needed tasks with JIRA. Daily Standups will happen separately for each group, led by the Team Leader. Each team must have a kanban board.
 It is recommended to track the team's velocity.
 ___
->## SLI (_Service Level Indicator_)
-1) Assurance of various metrics monitoring (AlertManagerFailing)
-2) Disk space reliability (DiskAlmostFull)
-3) Node space reliability (NodeMemoryFull)
-4) Suspicious or high traffic monitoring (HostNetworkTooMuchData)
-5) Comprehensive traffic monitoring
-6) Full application analysis
->## SLO (_Service Level Objective_)
-1) 90% guaranteed uptime whenever we can afford to host
-2) Guaranteed monitoring of traffic, health metrics, and error tracking 
-3) Prevention of host disk running out of space by alerting you when disk space is 10% or below
-4) Prevention of nodes running out of space by alerting you when 10% or below
-5) Alert notification for high amounts of traffic or potential DDoS attacks
-6) Accurate traffic monitoring by tallying the exact number of requests and the specific kind of requests(GET,POST,etc...)
-7) Complete application metrics coverage including data aggregation of basic, memory, GC, HikariCP, HTTP, Tomcat, and Logback statistics
-____
 >### Deadline
 >June 20th, 2022
 >
@@ -66,6 +50,22 @@ ____
 >    - The more closely this additional dashboard indicates potential issue scenarios, the better
 >    - The idea is to have visualizations that might indicate that a problem might occur soon, even if an alert has not fired yet
 ---
+>## SLI (_Service Level Indicator_)
+1) Assurance of various metrics monitoring (AlertManagerFailing)
+2) Disk space reliability (DiskAlmostFull)
+3) Node space reliability (NodeMemoryFull)
+4) Suspicious or high traffic monitoring (HostNetworkTooMuchData)
+5) Comprehensive traffic monitoring
+6) Full application analysis
+>## SLO (_Service Level Objective_)
+1) 90% guaranteed uptime whenever we can afford to host
+2) Guaranteed monitoring of traffic, health metrics, and error tracking
+3) Prevention of host disk running out of space by alerting you when disk space is 10% or below
+4) Prevention of nodes running out of space by alerting you when 10% or below
+5) Alert notification for high amounts of traffic or potential DDoS attacks
+6) Accurate traffic monitoring by tallying the exact number of requests and the specific kind of requests(GET,POST,etc...)
+7) Complete application metrics coverage including data aggregation of basic, memory, GC, HikariCP, HTTP, Tomcat, and Logback statistics
+____
 >## Documentation:
 >- Starting project 2 via kubernetes
 >  - ![img_6.png](img_6.png)
@@ -125,6 +125,11 @@ ____
 >- In command prompt navigate to 'Kubernetes' folder of project 2
 >- Once inside the Kubernetes folder run the command 'minikube kubectl apply -f ./'
 >- Run command 'minikube ip' and take note of the IP address it returns
->- 
-> MAKE SURE TO INCLUDE CHANGING URL IN VSCODE FOR ALERTMANAGER UI FOR PROJECT2_METRICS
-> START ALERTMANAGER/RESTART PROMETHEUS AFTER CHANGING IP IN VSCODE
+>- Go to your local prometheus.yml/yaml file, create a job, and paste the IP address in targets
+>- Open a new command prompt as an administrator and start up prometheus and alert manager via nssm
+>- Open Postman and start executing commands(see below for a list of Postman commands)
+>- Open a web browser and type localhost:3000 to navigate to Grafana homepage
+>- Navigate to the dashboard to view the application metrics
+---
+>## Postman commands:
+>- NOTE: When sending the requests via postman
