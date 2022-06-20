@@ -12,10 +12,21 @@ If done, the selected project must be deployed in the new namespace.
 Each team will follow an Agile approach, and track needed tasks with JIRA. Daily Standups will happen separately for each group, led by the Team Leader. Each team must have a kanban board.
 It is recommended to track the team's velocity.
 ___
-
+>## SLI (_Service Level Indicator_)
+>>Assurance of various metrics monitoring (AlertManagerFailing)
+>>Disk space reliability (DiskAlmostFull)
+>>Node space reliability (NodeMemoryFull)
+>>Suspicious or high traffic monitoring (HostNetworkTooMuchData)
+>>Comprehensive traffic monitoring
+>>Full application analysis
 >## SLO (_Service Level Objective_)
->>90% guaranteed uptime whenever we can afford to host, including health metrics, traffic monitoring and error tracking
-
+>>90% guaranteed uptime whenever we can afford to host
+>>Guaranteed monitoring of traffic, health metrics, and error tracking 
+>>Prevention of host disk running out of space by notifying you when disk space is 10% or below
+>>Prevention of nodes running out of space by notifying you when 10% or below
+>>Notification alerts for high amounts of traffic or potential DDoS attacks
+>>Accurate traffic monitoring by tallying the exact number of requests and the specific kind of requests(GET,POST,etc...)
+>>Complete application metrics coverage including data aggregation of basic, memory, GC, HikariCP, HTTP, Tomcat, and Logback statistics
 ____
 >### Deadline
 >June 20th, 2022
