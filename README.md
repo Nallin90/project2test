@@ -68,13 +68,13 @@ ____
 ---
 >## Documentation:
 >- Starting project 2 via kubernetes
->  - INSERT IMAGE OF CMD
+>  - ![img_5.png](img_5.png)
 >- Checking to see which alerts are firing via prometheus UI
->  - INSERT IMAGE OF PROMETHEUS ALERTS PAGE
+>  - ![img_4.png](img_4.png)
 >- Ensuring the appropriate jobs are up and running via prometheus UI
->  - IMAGE OF Prometheus Targets page
+>  - ![img_3.png](img_3.png)
 >- Validating that prometheus and alert manager are properly configured and communicating with one another
->  - IMAGE OF ALERT MANAGER UI PAGE
+>  - ![img_2.png](img_2.png)
 >- Analyzing statistical data of project 2 application via Grafana
->  - TWO IMAGES OF GRAFANA DASHBOARD
 >  - ![img.png](img.png)
+>  - ![img_1.png](img_1.png)
