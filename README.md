@@ -76,8 +76,8 @@ ____
 >- Validating that prometheus and alert manager are properly configured and communicating with one another
 >  - ![img_9.png](img_9.png)
 >- Analyzing statistical data of project 2 application via Grafana
->  - ![img.png](img.png)
->  - ![img_1.png](img_1.png)
+>  - ![img_12.png](img_12.png)
+>  - ![img_13.png](img_13.png)
 > 
 >>### Setting up the Jenkins Pipeline
 >> - Navigate to the directory of your jenkins.war and start it in cmd or powershell
