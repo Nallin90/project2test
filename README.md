@@ -67,6 +67,14 @@ ____
 >    - The idea is to have visualizations that might indicate that a problem might occur soon, even if an alert has not fired yet
 ---
 >## Documentation:
-> -Navigate inside Kubernetes folder inside our project and copy path
-> -Open CMD as administrator, cd into paste Kubernetes file path and hit ENTER
-> 
+>- Starting project 2 via kubernetes
+>  - INSERT IMAGE OF CMD
+>- Checking to see which alerts are firing via prometheus UI
+>  - INSERT IMAGE OF PROMETHEUS ALERTS PAGE
+>- Ensuring the appropriate jobs are up and running via prometheus UI
+>  - IMAGE OF Prometheus Targets page
+>- Validating that prometheus and alert manager are properly configured and communicating with one another
+>  - IMAGE OF ALERT MANAGER UI PAGE
+>- Analyzing statistical data of project 2 application via Grafana
+>  - TWO IMAGES OF GRAFANA DASHBOARD
+>  - ![img.png](img.png)
