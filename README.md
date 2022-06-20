@@ -89,6 +89,42 @@ ____
 >> - Click "Build Now" to force the pipeline to build the latest version of the repo, package it and then push the docker container to the 'project2-latest' tag.
 >> ![jenins_3.gif](https://i.imgur.com/R7eEToJ.gif)
 > ---
->## How To:
+>## Technologies Used:
+>- Java
+>- Maven
+>- Spring Framework:
+>  - Developer Tools:
+>    - SpringBoot DevTools
+>    - Lombok
+>  - Web
+>    - Spring Web
+>  - Spring Boot Data JPA
+>  - Spring Boot Actuator
+>  - Spring AOP
+>- AWS
+>  - RDS
+>- Logback
+>- Logcack-classic
+>- Logback-core
+>- Log4J
+>- Postman
+>- Git
+>- Grafana
+>- Prometheus
+>- Alert Manager
+>- nssm
+>## Secondary applications required:
+>- Postman
+>- Prometheus
+>- Alert Manager
+>- nssm
+
+>## How to run application:
+>- Open command prompt as an administrator
+>- Start minikube
+>- In command prompt navigate to 'Kubernetes' folder of project 2
+>- Once inside the Kubernetes folder run the command 'minikube kubectl apply -f ./'
+>- Run command 'minikube ip' and take note of the IP address it returns
+>- 
 > MAKE SURE TO INCLUDE CHANGING URL IN VSCODE FOR ALERTMANAGER UI FOR PROJECT2_METRICS
 > START ALERTMANAGER/RESTART PROMETHEUS AFTER CHANGING IP IN VSCODE
