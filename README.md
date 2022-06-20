@@ -67,3 +67,6 @@ ____
 >    - The idea is to have visualizations that might indicate that a problem might occur soon, even if an alert has not fired yet
 ---
 >## Documentation:
+> -Navigate inside Kubernetes folder inside our project and copy path
+> -Open CMD as administrator, cd into paste Kubernetes file path and hit ENTER
+> 
