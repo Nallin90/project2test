@@ -123,7 +123,7 @@ ____
 >- Open command prompt as an administrator
 >- Start minikube
 >- In command prompt navigate to 'Kubernetes' folder of project 2
->- Once inside the Kubernetes folder run the command 'minikube kubectl apply -f ./'
+>- Once inside the Kubernetes folder run the command `minikube kubectl apply -f ./`
 >- Run command 'minikube ip' and take note of the IP address it returns
 >- 
 > MAKE SURE TO INCLUDE CHANGING URL IN VSCODE FOR ALERTMANAGER UI FOR PROJECT2_METRICS
