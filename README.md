@@ -22,9 +22,9 @@ ___
 >## SLO (_Service Level Objective_)
 >>90% guaranteed uptime whenever we can afford to host
 >>Guaranteed monitoring of traffic, health metrics, and error tracking 
->>Prevention of host disk running out of space by notifying you when disk space is 10% or below
->>Prevention of nodes running out of space by notifying you when 10% or below
->>Notification alerts for high amounts of traffic or potential DDoS attacks
+>>Prevention of host disk running out of space by alerting you when disk space is 10% or below
+>>Prevention of nodes running out of space by alerting you when 10% or below
+>>Alert notification for high amounts of traffic or potential DDoS attacks
 >>Accurate traffic monitoring by tallying the exact number of requests and the specific kind of requests(GET,POST,etc...)
 >>Complete application metrics coverage including data aggregation of basic, memory, GC, HikariCP, HTTP, Tomcat, and Logback statistics
 ____
