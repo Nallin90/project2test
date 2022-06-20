@@ -78,7 +78,17 @@ ____
 >- Analyzing statistical data of project 2 application via Grafana
 >  - ![img.png](img.png)
 >  - ![img_1.png](img_1.png)
-
+> 
+>>### Setting up the Jenkins Pipeline
+>> - Navigate to the directory of your jenkins.war and start it in cmd or powershell
+>> ![jenkins_1.png](https://i.imgur.com/KRtaRvE.png)
+>> - Once Jenkins is running, create a new pipeline by clicking on "New Item" in the sidebar, giving it a name and selecting the pipeline option
+>> ![jenkins_2.gif](https://i.imgur.com/0rKjutv.gif)
+>> - Configure the pipeline to look at the current repo and set it to poll every minute, also set the pipeline script to use the Jenkinsfile included in the repo.
+>> ![jenkins_3.gif](https://i.imgur.com/jQ1k3bc.gif)
+>> - Click "Build Now" to force the pipeline to build the latest version of the repo, package it and then push the docker container to the 'project2-latest' tag.
+>> ![jenins_3.gif](https://i.imgur.com/R7eEToJ.gif)
+> ---
 >## How To:
 > MAKE SURE TO INCLUDE CHANGING URL IN VSCODE FOR ALERTMANAGER UI FOR PROJECT2_METRICS
 > START ALERTMANAGER/RESTART PROMETHEUS AFTER CHANGING IP IN VSCODE
