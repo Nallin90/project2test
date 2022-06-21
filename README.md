@@ -34,9 +34,6 @@ ___
 >
 >- Each team must have a full DevOps pipeline built using Jenkins
 >    - This pipeline must be configured through a Jenkinsfile and triggered in response to a webhook
->    - The pipeline must also be configured with a SonarCloud quality gate
->        - This additionally means that the project must have unit tests
->        - The only requirement will be to have minimum 70% test coverage for the service package
 >    - The project will be deployed with a canary deployment model
 >        - Custom Dockerfiles must be designed and used
 >        - No more usage of `mvn spring-boot:build-image`
