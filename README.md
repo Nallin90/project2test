@@ -132,4 +132,3 @@ ____
 >- Navigate to the dashboard to view the application metrics
 ---
 >## Postman commands:
->- NOTE: When sending the requests via postman
