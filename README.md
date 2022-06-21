@@ -131,26 +131,26 @@ ____
 >## Postman commands:
 > - Open PostMan and use each url with the associated method next to it while copying the information under as the JSON for POST and PUT operations
 > - Use the IP you obtained before from running `minikube ip`, and use it in the addresses provided below
-> - For ***Register*** : **POST** `http://YOURMINIKUBEIP:30004/user/register` 
+> - For ***Register*** : **POST** `http://<YOURMINIKUBEIP>:30004/user/register` 
 >   - {
        "email": "funky@gmail.com",
        "password": "funky"
        }
-> - For ***Login***: **POST** `http://YOURMINIKUBEIP:30004/login`
+> - For ***Login***: **POST** `http://<YOURMINIKUBEIP>:30004/login`
 >   - {
          "email": "fancyman@fancy.com",
          "password": "fancy"
          }
-> - For ***Logout*** : **POST** `http://YOURMINIKUBEIP:30004/logout`
-> - To ***Get All Users*** (Must be logged in first): **GET** `http://YOURMINIKUBEIP:30004/user/all`
-> - To ***Get All Items*** : **GET** `http://YOURMINIKUBEIP:30004/shop`
-> - To ***Get a single Item*** : **GET** `http://YOURMINIKUBEIP:30004/shop/29`
-> - To ***Add an item into the shop*** : **POST** `http://YOURMINIKUBEIP:30004/shop`
+> - For ***Logout*** : **POST** `http://<YOURMINIKUBEIP>:30004/logout`
+> - To ***Get All Users*** (Must be logged in first): **GET** `http://<YOURMINIKUBEIP>:30004/user/all`
+> - To ***Get All Items*** : **GET** `http://<YOURMINIKUBEIP>:30004/shop`
+> - To ***Get a single Item*** : **GET** `http://<YOURMINIKUBEIP>:30004/shop/29`
+> - To ***Add an item into the shop*** : **POST** `http://<YOURMINIKUBEIP>:30004/shop`
 >     - {
        "itemName": "Character Skin 5",
        "price": "9.99"
        }
-> - To ***Add an item into the cart*** : **PUT** `http://YOURMINIKUBEIP:30004/user/cart/add`
+> - To ***Add an item into the cart*** : **PUT** `http://<YOURMINIKUBEIP>:30004/user/cart/add`
 >     - { "itemId": 46 }
-> - To ***Add a cart to an order*** : **POST** `http://YOURMINIKUBEIP:30004/user/order/add`
+> - To ***Add a cart to an order*** : **POST** `http://<YOURMINIKUBEIP>:30004/user/order/add`
 > 
