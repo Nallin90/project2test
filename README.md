@@ -47,14 +47,7 @@ ___
 >    - The more closely this additional dashboard indicates potential issue scenarios, the better
 >    - The idea is to have visualizations that might indicate that a problem might occur soon, even if an alert has not fired yet
 ---
->## SLI (_Service Level Indicator_)
-1) Assurance of various metrics monitoring (AlertManagerFailing)
-2) Disk space reliability (DiskAlmostFull)
-3) Node space reliability (NodeMemoryFull)
-4) Suspicious or high traffic monitoring (HostNetworkTooMuchData)
-5) Comprehensive traffic monitoring
-6) Full application analysis
->## SLO (_Service Level Objective_)
+>## SLA (_Service Level Agreement)
 1) 90% guaranteed uptime whenever we can afford to host
 2) Guaranteed monitoring of traffic, health metrics, and error tracking
 3) Prevention of host disk running out of space by alerting you when disk space is 10% or below
@@ -62,6 +55,14 @@ ___
 5) Alert notification for high amounts of traffic or potential DDoS attacks
 6) Accurate traffic monitoring by tallying the exact number of requests and the specific kind of requests(GET,POST,etc...)
 7) Complete application metrics coverage including data aggregation of basic, memory, GC, HikariCP, HTTP, Tomcat, and Logback statistics
+
+>## SLO (_Service Level Objectives)
+1) Assurance of various metrics monitoring (AlertManagerFailing)
+2) Disk space reliability (DiskAlmostFull)
+3) Node space reliability (NodeMemoryFull)
+4) Suspicious or high traffic monitoring (HostNetworkTooMuchData)
+5) Comprehensive traffic monitoring
+6) Full application analysis
 ____
 >## Documentation:
 >- Starting project 2 via kubernetes
